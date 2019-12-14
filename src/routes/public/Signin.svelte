@@ -23,7 +23,7 @@
       style="height: 500px">
       <div class="flex flex-col w-full md:w-1/2 p-4">
         <div class="flex flex-col flex-1 justify-center mb-8">
-          <h1 class="text-4xl text-center font-thin">Welcome Back</h1>
+          <h1 class="text-4xl text-center font-thin">HeroicPolls</h1>
           <div class="w-full mt-4">
             <form class="form-horizontal w-3/4 mx-auto">
               <div class="flex flex-col mt-4">
@@ -66,8 +66,8 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:block md:w-1/2 rounded-r-lg flex items-center">
-        <i class="material-icons fill-current mr-2" style="font-size:300px">
+      <div class="hidden md:flex md:w-1/2 rounded-r-lg flex items-center">
+        <i class="material-icons text-blue-500 m-auto" style="font-size:300px">
           poll
         </i>
 

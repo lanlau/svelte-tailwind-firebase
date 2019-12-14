@@ -1,4 +1,5 @@
 <script>
+  import Loading from "../components/loading/loading.svelte";
   import Nav from "../components/nav/nav.svelte";
   import publicRoutes from "./public/routes.svelte";
   import protectedRoutes from "./protected/routes.svelte";
@@ -44,7 +45,7 @@
 </script>
 
 {#if !showPage}
-  <p>Loading</p>
+  <Loading />
 {:else}
   {#if $location !== '/signin'}
     <Nav user={$currentUser} on:logout={logout} />
