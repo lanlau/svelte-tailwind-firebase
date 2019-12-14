@@ -6,6 +6,20 @@ _Psst — looking for a shareable component template? Go here --> [sveltejs/com
 
 add a settings.js file in firebase directory
 
+```bash
+const firebaseConfig = {
+  apiKey: "xxx",
+  authDomain: "xxx",
+  databaseURL: "xxx",
+  projectId: "xxx",
+  storageBucket: "xxx",
+  messagingSenderId: "xx",
+  appId: "xx"
+};
+
+export default firebaseConfig;
+```
+
 # svelte app
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
