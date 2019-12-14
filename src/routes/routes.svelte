@@ -4,16 +4,13 @@
   import publicRoutes from "./public/routes.svelte";
   import protectedRoutes from "./protected/routes.svelte";
   import Router, { link, wrap, replace, location } from "svelte-spa-router";
-  import { Auth } from "../firebase";
-  import { authState } from "rxfire/auth";
-
   import { currentUser } from "../stores/user";
 
+  import { watchAuthState, signOut } from "../middleware/auth.js";
+
   let showPage = false;
-  const unsubscribe = authState(Auth).subscribe(u => {
-    const user = u ? u : { id: 0 };
-    return currentUser.set(user);
-  });
+
+  watchAuthState();
 
   const routes = {
     "/admin": wrap(protectedRoutes, detail => {
@@ -34,7 +31,7 @@
   };
 
   const logout = () => {
-    Auth.signOut();
+    signOut();
   };
 
   $: if (!$currentUser) {
