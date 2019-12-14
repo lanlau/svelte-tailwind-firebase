@@ -2,7 +2,7 @@ _Psst — looking for a shareable component template? Go here --> [sveltejs/com
 
 ---
 
-#config firebase
+# config firebase
 
 add a settings.js file in firebase directory
 
