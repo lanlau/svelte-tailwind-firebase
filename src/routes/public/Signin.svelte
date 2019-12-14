@@ -23,7 +23,7 @@
       style="height: 500px">
       <div class="flex flex-col w-full md:w-1/2 p-4">
         <div class="flex flex-col flex-1 justify-center mb-8">
-          <h1 class="text-4xl text-center font-thin">HeroicPolls</h1>
+          <h1 class="text-4xl text-center font-thin">MySite</h1>
           <div class="w-full mt-4">
             <form class="form-horizontal w-3/4 mx-auto">
               <div class="flex flex-col mt-4">
@@ -56,7 +56,7 @@
                 </button>
               </div>
             </form>
-            <div class="text-center mt-4">
+            <div class="hidden text-center mt-4">
               <a
                 class="no-underline hover:underline text-blue-dark text-xs"
                 href="/">
