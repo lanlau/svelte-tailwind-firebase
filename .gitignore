@@ -1,4 +1,4 @@
 /node_modules/
 /public/build/
-/firebase/settings.js
+/src/firebase/settings.js
 .DS_Store
