@@ -1,5 +1,4 @@
 <script>
-  import Nav from "../../components/nav/nav.svelte";
   import Router from "svelte-spa-router";
   import Sessions from "./sessions/sessions.svelte";
   import Session from "./session/session.svelte";
@@ -13,6 +12,5 @@
   };
 </script>
 
-<Nav />
 <h1>Protected Routes</h1>
 <Router {routes} prefix="/admin" />
