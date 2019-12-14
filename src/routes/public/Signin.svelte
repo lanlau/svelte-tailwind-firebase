@@ -66,11 +66,12 @@
           </div>
         </div>
       </div>
-      <div
-        class="hidden md:block md:w-1/2 rounded-r-lg"
-        style="background:
-        url('https://images.unsplash.com/photo-1515965885361-f1e0095517ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80');
-        background-size: cover; background-position: center center;" />
+      <div class="hidden md:block md:w-1/2 rounded-r-lg flex items-center">
+        <i class="material-icons fill-current mr-2" style="font-size:300px">
+          poll
+        </i>
+
+      </div>
     </div>
   </div>
 </div>
