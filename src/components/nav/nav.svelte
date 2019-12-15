@@ -15,7 +15,7 @@
 <nav class="flex items-center justify-between flex-wrap bg-blue-500 p-6">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
     <i class="material-icons fill-current text-3xl mr-2">poll</i>
-    <span class="font-semibold text-xl tracking-tight">MySite</span>
+    <span class="font-semibold text-xl tracking-tight">HeroicPolls</span>
   </div>
   <div class="block lg:hidden">
     <button
@@ -70,7 +70,7 @@
           hover:bg-white mt-4 lg:mt-0"
           on:click={logout}
           use:link>
-          {user.email}
+          {user.firstname} {user.lastname}
         </a>
       {/if}
     </div>

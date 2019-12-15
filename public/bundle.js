@@ -1042,10 +1042,10 @@ var app = (function () {
     			a1.textContent = "Sessions";
     			attr_dev(a0, "href", "/");
     			attr_dev(a0, "class", "block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white\n          mr-4");
-    			add_location(a0, file$1, 38, 8, 1202);
+    			add_location(a0, file$1, 38, 8, 1207);
     			attr_dev(a1, "href", "/admin/sessions");
     			attr_dev(a1, "class", "block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white\n          mr-4");
-    			add_location(a1, file$1, 45, 8, 1376);
+    			add_location(a1, file$1, 45, 8, 1381);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a0, anchor);
@@ -1077,27 +1077,35 @@ var app = (function () {
     // (65:6) {:else}
     function create_else_block(ctx) {
     	let a;
-    	let t_value = /*user*/ ctx[0].email + "";
-    	let t;
+    	let t0_value = /*user*/ ctx[0].firstname + "";
+    	let t0;
+    	let t1;
+    	let t2_value = /*user*/ ctx[0].lastname + "";
+    	let t2;
     	let link_action;
     	let dispose;
 
     	const block = {
     		c: function create() {
     			a = element("a");
-    			t = text(t_value);
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
     			attr_dev(a, "href", "/");
     			attr_dev(a, "class", "inline-block text-sm px-4 py-2 leading-none border rounded\n          text-white border-white hover:border-transparent hover:text-blue-500\n          hover:bg-white mt-4 lg:mt-0");
-    			add_location(a, file$1, 65, 8, 1930);
+    			add_location(a, file$1, 65, 8, 1935);
     			dispose = listen_dev(a, "click", /*logout*/ ctx[2], false, false, false);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
-    			append_dev(a, t);
+    			append_dev(a, t0);
+    			append_dev(a, t1);
+    			append_dev(a, t2);
     			link_action = link.call(null, a) || ({});
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*user*/ 1 && t_value !== (t_value = /*user*/ ctx[0].email + "")) set_data_dev(t, t_value);
+    			if (dirty[0] & /*user*/ 1 && t0_value !== (t0_value = /*user*/ ctx[0].firstname + "")) set_data_dev(t0, t0_value);
+    			if (dirty[0] & /*user*/ 1 && t2_value !== (t2_value = /*user*/ ctx[0].lastname + "")) set_data_dev(t2, t2_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(a);
@@ -1128,7 +1136,7 @@ var app = (function () {
     			a.textContent = "Signin";
     			attr_dev(a, "href", "/signin");
     			attr_dev(a, "class", "inline-block text-sm px-4 py-2 leading-none border rounded\n          text-white border-white hover:border-transparent hover:text-blue-500\n          hover:bg-white mt-4 lg:mt-0");
-    			add_location(a, file$1, 56, 8, 1636);
+    			add_location(a, file$1, 56, 8, 1641);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -1189,7 +1197,7 @@ var app = (function () {
     			i.textContent = "poll";
     			t1 = space();
     			span = element("span");
-    			span.textContent = "MySite";
+    			span.textContent = "HeroicPolls";
     			t3 = space();
     			div1 = element("div");
     			button = element("button");
@@ -1210,23 +1218,23 @@ var app = (function () {
     			add_location(span, file$1, 17, 4, 469);
     			attr_dev(div0, "class", "flex items-center flex-shrink-0 text-white mr-6");
     			add_location(div0, file$1, 15, 2, 337);
-    			add_location(title, file$1, 28, 8, 891);
+    			add_location(title, file$1, 28, 8, 896);
     			attr_dev(path, "d", "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z");
-    			add_location(path, file$1, 29, 8, 919);
+    			add_location(path, file$1, 29, 8, 924);
     			attr_dev(svg, "class", "fill-current h-3 w-3");
     			attr_dev(svg, "viewBox", "0 0 20 20");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
-    			add_location(svg, file$1, 24, 6, 769);
+    			add_location(svg, file$1, 24, 6, 774);
     			attr_dev(button, "class", "flex items-center px-3 py-2 border rounded text-white border-white\n      hover:text-white hover:border-white");
-    			add_location(button, file$1, 20, 4, 579);
+    			add_location(button, file$1, 20, 4, 584);
     			attr_dev(div1, "class", "block lg:hidden");
-    			add_location(div1, file$1, 19, 2, 545);
+    			add_location(div1, file$1, 19, 2, 550);
     			attr_dev(div2, "class", "text-sm lg:flex-grow");
-    			add_location(div2, file$1, 36, 4, 1125);
-    			add_location(div3, file$1, 54, 4, 1587);
+    			add_location(div2, file$1, 36, 4, 1130);
+    			add_location(div3, file$1, 54, 4, 1592);
     			attr_dev(div4, "class", "w-full block flex-grow lg:flex lg:items-center lg:w-auto");
     			toggle_class(div4, "hidden", !/*menuVisible*/ ctx[1]);
-    			add_location(div4, file$1, 33, 2, 1014);
+    			add_location(div4, file$1, 33, 2, 1019);
     			attr_dev(nav, "class", "flex items-center justify-between flex-wrap bg-blue-500 p-6");
     			add_location(nav, file$1, 14, 0, 261);
     			dispose = listen_dev(button, "click", /*click_handler*/ ctx[4], false, false, false);
@@ -4630,7 +4638,7 @@ var app = (function () {
     			div6 = element("div");
     			div5 = element("div");
     			h1 = element("h1");
-    			h1.textContent = "MySite";
+    			h1.textContent = "HeroicPolls";
     			t1 = space();
     			div4 = element("div");
     			form = element("form");
@@ -4659,41 +4667,41 @@ var app = (function () {
     			attr_dev(input0, "name", "email");
     			input0.value = "";
     			attr_dev(input0, "placeholder", "Email");
-    			add_location(input0, file$3, 29, 16, 950);
+    			add_location(input0, file$3, 29, 16, 955);
     			attr_dev(div0, "class", "flex flex-col mt-4");
-    			add_location(div0, file$3, 28, 14, 901);
+    			add_location(div0, file$3, 28, 14, 906);
     			attr_dev(input1, "id", "password");
     			attr_dev(input1, "type", "password");
     			attr_dev(input1, "class", "flex-grow h-8 px-2 rounded border border-grey-400");
     			attr_dev(input1, "name", "password");
     			input1.required = true;
     			attr_dev(input1, "placeholder", "Password");
-    			add_location(input1, file$3, 39, 16, 1312);
+    			add_location(input1, file$3, 39, 16, 1317);
     			attr_dev(div1, "class", "flex flex-col mt-4");
-    			add_location(div1, file$3, 38, 14, 1263);
+    			add_location(div1, file$3, 38, 14, 1268);
     			attr_dev(button, "type", "submit");
     			attr_dev(button, "class", "bg-blue-500 hover:bg-blue-700 text-white text-sm\n                  font-semibold py-2 px-4 rounded");
-    			add_location(button, file$3, 49, 16, 1690);
+    			add_location(button, file$3, 49, 16, 1695);
     			attr_dev(div2, "class", "flex flex-col mt-8");
-    			add_location(div2, file$3, 48, 14, 1641);
+    			add_location(div2, file$3, 48, 14, 1646);
     			attr_dev(form, "class", "form-horizontal w-3/4 mx-auto");
-    			add_location(form, file$3, 27, 12, 842);
+    			add_location(form, file$3, 27, 12, 847);
     			attr_dev(a, "class", "no-underline hover:underline text-blue-dark text-xs");
     			attr_dev(a, "href", "/");
-    			add_location(a, file$3, 59, 14, 2061);
+    			add_location(a, file$3, 59, 14, 2066);
     			attr_dev(div3, "class", "hidden text-center mt-4");
-    			add_location(div3, file$3, 58, 12, 2009);
+    			add_location(div3, file$3, 58, 12, 2014);
     			attr_dev(div4, "class", "w-full mt-4");
-    			add_location(div4, file$3, 26, 10, 804);
+    			add_location(div4, file$3, 26, 10, 809);
     			attr_dev(div5, "class", "flex flex-col flex-1 justify-center mb-8");
     			add_location(div5, file$3, 24, 8, 674);
     			attr_dev(div6, "class", "flex flex-col w-full md:w-1/2 p-4");
     			add_location(div6, file$3, 23, 6, 618);
     			attr_dev(i, "class", "material-icons text-blue-500 m-auto");
     			set_style(i, "font-size", "300px");
-    			add_location(i, file$3, 69, 8, 2370);
+    			add_location(i, file$3, 69, 8, 2375);
     			attr_dev(div7, "class", "hidden md:flex md:w-1/2 rounded-r-lg flex items-center");
-    			add_location(div7, file$3, 68, 6, 2293);
+    			add_location(div7, file$3, 68, 6, 2298);
     			attr_dev(div8, "class", "flex rounded-lg shadow-lg w-full sm:w-3/4 lg:w-1/2 bg-white sm:mx-0");
     			set_style(div8, "height", "500px");
     			add_location(div8, file$3, 20, 4, 496);
@@ -5828,10 +5836,37 @@ var app = (function () {
         });
     }
 
+    const FirebaseEmployees = Firestore.collection("users");
+
+    const findOne = employeeId => {
+      return FirebaseEmployees.doc(employeeId).get();
+    };
+
+    var FbEmployees = { findOne };
+
     const watchAuthState = () => {
       const unsubscribe = authState(Auth).subscribe(u => {
-        const user = u ? u : { id: 0 };
-        return currentUser.set(user);
+        if (Auth.currentUser) {
+          let userInfo = {
+            email: Auth.currentUser.email,
+            id: Auth.currentUser.uid,
+            phoneNumber: Auth.currentUser.phoneNumber,
+            photoUrl: Auth.currentUser.photoUrl
+          };
+
+          FbEmployees.findOne(userInfo.id).then(doc => {
+            userInfo = { ...userInfo, ...doc.data(), id: doc.id };
+
+            Auth.currentUser.getIdTokenResult().then(idTokenResult => {
+              userInfo.claims = idTokenResult.claims;
+              console.log("userInfoxx", userInfo);
+              currentUser.set(userInfo);
+              return;
+            });
+          });
+        } else {
+          currentUser.set({ id: 0 });
+        }
       });
     };
 
